@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Professional Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Your Name</h1>
+            <p>Your Professional Title</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#research">Research Interests</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#collaborations">Collaborations</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#hobby">Hobby</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Welcome to My Website</h2>
+            <p>Hello! I'm [Your Name], a [Your Profession]. Welcome to my professional website.</p>
+        </section>
+        
+        <section id="research">
+            <h2>Research Interests</h2>
+            <p>Here you can describe your research interests.</p>
+        </section>
+        
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>Publication 1 - <a href="link-to-publication">Link</a></li>
+                <li>Publication 2 - <a href="link-to-publication">Link</a></li>
+                <!-- Add more publications as needed -->
+            </ul>
+        </section>
+        
+        <section id="collaborations">
+            <h2>Collaborations</h2>
+            <p>Details about your collaborations.</p>
+        </section>
+        
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="photo1.jpg" alt="Photo 1" class="gallery-thumbnail" data-full="photo1-large.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo2.jpg" alt="Photo 2" class="gallery-thumbnail" data-full="photo2-large.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo3.jpg" alt="Photo 3" class="gallery-thumbnail" data-full="photo3-large.jpg">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+        
+        <section id="downloads">
+            <h2>Downloads</h2>
+            <ul>
+                <li><a href="document.pdf" class="download-link" download>Download PDF Document</a></li>
+                <li><a href="textfile.txt" class="download-link" download>Download Text File</a></li>
+                <li><a href="document.docx" class="download-link" download>Download DOCX Document</a></li>
+                <li><a href="spreadsheet.xlsx" class="download-link" download>Download Excel Spreadsheet</a></li>
+                <li><a href="presentation.pptx" class="download-link" download>Download PowerPoint Presentation</a></li>
+                <li><a href="audio.mp3" class="download-link" download>Download Audio File</a></li>
+                <li><a href="video.mp4" class="download-link" download>Download Video File</a></li>
+            </ul>
+            <h3>Embedded Documents</h3>
+            <div class="embedded-documents">
+                <iframe src="document.pdf" width="600" height="400" style="border: none;"></iframe>
+                <iframe src="presentation.pptx" width="600" height="400" style="border: none;"></iframe>
+                <!-- Add more iframes for other document types if needed -->
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>You can reach me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        </section>
+        
+        <section id="hobby">
+            <h2>Hobby</h2>
+            <p>Here you can describe your hobby or interests outside of your professional work.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

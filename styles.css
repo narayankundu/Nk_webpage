@@ -1,0 +1,188 @@
+/* Basic Reset */
+body {
+    font-family: 'Arial', sans-serif; /* Font family for the entire page */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    background: url('background.jpg') no-repeat center center fixed; /* Background image for the entire page */
+    background-size: cover; /* Ensure the background image covers the entire page */
+}
+
+/* Header and Banner */
+header {
+    background: url('banner.jpg') no-repeat center center; /* Banner image */
+    background-size: cover; /* Cover the header area with the banner image */
+    color: #fff; /* Text color in header */
+    text-align: center;
+    padding: 2rem 0; /* Adjust padding for spacing */
+    position: relative;
+}
+
+.banner {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
+    padding: 2rem 0; /* Adjust padding for spacing */
+    position: relative;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 3rem; /* Font size for main banner heading */
+}
+
+.banner p {
+    margin: 0;
+    font-size: 1.5rem; /* Font size for subheading or description */
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background for navigation bar */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem; /* Spacing between navigation links */
+}
+
+nav ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Color change on hover */
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for readability */
+    border-radius: 8px; /* Rounded corners for the content box */
+    margin: 2rem auto; /* Center the content box with space around it */
+    max-width: 1200px; /* Maximum width for larger screens */
+}
+
+/* Section Headers */
+h2 {
+    border-bottom: 2px solid #2575fc; /* Accent color for section headers */
+    padding-bottom: 0.5rem; /* Space below the header */
+    color: #333; /* Text color for headers */
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    gap: 1rem; /* Space between gallery items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.gallery-item {
+    flex: 1 1 calc(33% - 1rem); /* Responsive sizing for gallery items */
+    margin-bottom: 1rem; /* Space below gallery items */
+    position: relative;
+}
+
+.gallery-thumbnail {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #2575fc; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.gallery-thumbnail:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Download Links */
+.download-link {
+    display: block;
+    color: #2575fc; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 0.5rem 0; /* Padding around the link */
+    border-bottom: 1px solid #ccc; /* Border below the link */
+    transition: color 0.3s, border-bottom 0.3s; /* Smooth transitions */
+}
+
+.download-link:hover {
+    color: #004bb7; /* Darker color on hover */
+    border-bottom: 1px solid #2575fc; /* Accent color for border on hover */
+}
+
+/* Embedded Documents */
+.embedded-documents {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between embedded documents */
+}
+
+.embedded-documents iframe {
+    width: 100%; /* Full width of the container */
+    height: 400px; /* Fixed height for embedded content */
+    border: 2px solid #2575fc; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background for footer */
+    color: #fff; /* Text color in footer */
+    text-align: center;
+    padding: 1rem; /* Padding inside footer */
+    position: fixed; /* Fix footer at the bottom */
+    width: 100%;
+    bottom: 0;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for modal */
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px; /* Maximum width for modal content */
+}
+
+.close {
+    color: #fff; /* Close button color */
+    float: right;
+    font-size: 2rem; /* Font size for close button */
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffd700; /* Color change on hover/focus */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    margin: 10px 0;
+    text-align: center;
+    color: #fff; /* Text color for modal caption */
+}
