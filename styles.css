@@ -17,7 +17,7 @@ body {
 
 /* Header and Banner */
 header {
-    background: url('banner.jpg') no-repeat center center; /* Banner image */
+    background: url('banner.png') no-repeat center center; /* Banner image */
     background-size: cover; /* Cover the header area with the banner image */
     color: #fff; /* Text color in header */
     text-align: center;
