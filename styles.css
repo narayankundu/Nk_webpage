@@ -154,3 +154,22 @@ footer {
 .gallery-thumbnail:hover {
     transform: scale(1.1);
 }
+/* Other existing CSS code */
+
+/* Add new styles for the About Me section here */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-container p {
+    flex: 1;
+    text-align: justify;
+}
