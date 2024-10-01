@@ -61,7 +61,7 @@ header {
 /* Main Content Styling */
 main {
     display: none;
-    padding: 30px; /* Reduced padding */
+    padding: 25px; /* Reduced padding */
     animation: slideIn 0.5s forwards;
     border-radius: 8px;
     margin: 20px;
