@@ -1,14 +1,14 @@
 /* Base Styles */
 :root {
-    --primary-bg: linear-gradient(135deg, #1a1a2e, #16213e); /* Dark background */
-    --secondary-bg: rgba(255, 255, 255, 0.2); /* Lighter background for better contrast */
-    --highlight-color: #E0BBE4; /* Highlight color */
-    --text-color: #f0f0f0; /* Light text color */
-    --shadow-color: rgba(0, 0, 0, 0.5); /* Darker shadow for contrast */
+    --primary-bg: linear-gradient(135deg, #1a1a2e, #16213e);
+    --secondary-bg: rgba(255, 255, 255, 0.12);
+    --highlight-color: #E0BBE4;
+    --text-color: #f0f0f0;
+    --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 body {
-    font-family: 'Poppins', Magnific Caos;
+    font-family: 'Times New Roman', serif; /* Changed font to Times New Roman */
     background: var(--primary-bg);
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
@@ -18,6 +18,16 @@ body {
     overflow-x: hidden;
     position: relative;
     line-height: 1.8; /* Increased line spacing */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Times New Roman', serif; /* Ensure headings also use Times New Roman */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Adds depth to headings */
+}
+
+p {
+    font-family: 'Times New Roman', serif; /* Ensure paragraphs use Times New Roman */
+    margin-bottom: 15px; /* Add space between paragraphs */
 }
 
 /* Animation for the Background */
