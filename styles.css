@@ -16,6 +16,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    position: relative; /* Set position to relative for layering */
 }
 
 /* Animation for the Background */
@@ -38,7 +39,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1; /* Ensure it's behind other content */
     pointer-events: none;
     opacity: 0.25; /* Subtle opacity for blending */
 }
@@ -54,6 +55,7 @@ header {
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
     animation: fadeIn 2s ease;
     font-weight: 700;
+    position: relative; /* Ensure header is above the background */
 }
 
 /* Tab Button Styling */
@@ -71,6 +73,8 @@ header {
     outline: none;
     backdrop-filter: blur(6px);
 }
+
+/* Rest of your styles remain unchanged... */
 
 .tab-button:hover {
     transform: translateY(-7px);
