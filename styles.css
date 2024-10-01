@@ -124,24 +124,25 @@ footer {
 
 /* Gradient Styles */
 .gradient1 {
-    background: linear-gradient(135deg, #4B0082, #8A2BE2);
+    background: linear-gradient(135deg, #2A005B, #5A189A); /* Dark Indigo to Deep Purple */
 }
 
 .gradient2 {
-    background: linear-gradient(135deg, #5D3FD3, #A44DD9);
+    background: linear-gradient(135deg, #3A0CA3, #7209B7); /* Dark Purple to Rich Violet */
 }
 
 .gradient3 {
-    background: linear-gradient(135deg, #7A1F9B, #D86D92);
+    background: linear-gradient(135deg, #560BAD, #9D4EDD); /* Dark Violet to Muted Magenta */
 }
 
 .gradient4 {
-    background: linear-gradient(135deg, #871F7B, #B56BA5);
+    background: linear-gradient(135deg, #6A0572, #C77DFF); /* Dark Plum to Soft Lavender */
 }
 
 .gradient5 {
-    background: linear-gradient(135deg, #4B0082, #E0BBE4);
+    background: linear-gradient(135deg, #3F0071, #9D4EDD); /* Deep Violet to Soft Purple */
 }
+
 
 /* Animations */
 @keyframes fadeIn {
