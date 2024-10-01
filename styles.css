@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Magnific Caos;
     background: var(--primary-bg);
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
