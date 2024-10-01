@@ -148,23 +148,23 @@ footer {
 
 /* Gradient Styles */
 .gradient1 {
-    background: linear-gradient(135deg, #4B0082, #8A2BE2);
+    background: linear-gradient(135deg, #6ec6ff, #b9fbc0);
 }
 
 .gradient2 {
-    background: linear-gradient(135deg, #5D3FD3, #A44DD9);
+    background: linear-gradient(135deg, #d1c4e9, #f8bbd0);
 }
 
 .gradient3 {
-    background: linear-gradient(135deg, #7A1F9B, #D86D92);
+    background: linear-gradient(135deg, #ff7e7e, #fff9c4);
 }
 
 .gradient4 {
-    background: linear-gradient(135deg, #871F7B, #B56BA5);
+    background: linear-gradient(135deg, #ffe0b2, #bbdefb);
 }
 
 .gradient5 {
-    background: linear-gradient(135deg, #4B0082, #E0BBE4);
+    background: linear-gradient(135deg, #b2fbc5, #e0b3ff);
 }
 
 /* Animations */
