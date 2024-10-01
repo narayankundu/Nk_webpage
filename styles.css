@@ -42,7 +42,7 @@ body {
     height: 100%;
     z-index: -1;
     pointer-events: none;
-    opacity: 0.3; /* Subtle effect */
+    opacity: 0.4; /* Subtle effect */
 }
 
 /* Header Styles */
