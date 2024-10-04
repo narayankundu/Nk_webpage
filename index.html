@@ -410,6 +410,24 @@
 
 </script>
 
+<script>
+    // Check if the counter exists in localStorage
+    let visitCount = localStorage.getItem('page_view');
+
+    // If not, initialize the counter
+    if (!visitCount) {
+        visitCount = 0;
+    }
+
+    // Increment the counter
+    visitCount++;
+
+    // Store the new counter value
+    localStorage.setItem('page_view', visitCount);
+
+    // Display the count on the page
+    document.getElementById('visit-count').textContent = visitCount;
+</script>
 
 
 </body>
