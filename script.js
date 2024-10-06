@@ -48,7 +48,7 @@ contactForm.addEventListener('submit', function(event) {
     };
 
     // Send the email via EmailJS
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', emailParams)
+    emailjs.send("NK_Email_JS","NK_Email_JS_Template_ID", emailParams)
     .then(function(response) {
         // Show success message
         statusMessage.innerText = "Message sent successfully!";
