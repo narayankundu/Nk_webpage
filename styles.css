@@ -103,11 +103,11 @@ main.active {
 
 /* Profile Picture Styling */
 .profile-pic {
-    width: 120px;
+    width: 180px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 70%;
     box-shadow: 0 4px 15px var(--shadow-color);
-    margin: 15px 0;
+    margin: 20px 0;
     animation: bounce 1s ease;
 }
 
