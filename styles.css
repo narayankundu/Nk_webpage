@@ -142,7 +142,7 @@ footer {
 
 /* Gradient Styles */
 .gradient1 { background: linear-gradient(135deg, #33ccff, #ff00ff); }
-.gradient2 { background: linear-gradient(135deg, #d1c4e9, #f8bbd0); }
+.gradient2 { background: linear-gradient(135deg, #ff00ff, #33ccff); }
 .gradient3 { background: linear-gradient(135deg, #ff7e7e, #fff9c4); }
 .gradient4 { background: linear-gradient(135deg, #ffe0b2, #bbdefb); }
 .gradient5 { background: linear-gradient(135deg, #b2fbc5, #e0b3ff); }
