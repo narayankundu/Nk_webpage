@@ -44,11 +44,11 @@ contactForm.addEventListener('submit', function(event) {
     const emailParams = {
         from_name: name,
         message: message,
-        to_email: 'kundu.narayan1995@gmail.com'  // Your email address
+       // to_email: 'kundu.narayan1995@gmail.com'  // Your email address
     };
 
     // Send the email via EmailJS
-    emailjs.send("NK_Email_JS","NK_Email_JS_Template_ID", emailParams)
+    emailjs.send("service_9dsxtql","template_gqyy4mc_email", emailParams)
     .then(function(response) {
         // Show success message
         statusMessage.innerText = "Message sent successfully!";
