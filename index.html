@@ -1,225 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Narayan Kundu</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-</head>
-<body>
-    <header>
-        <div class="colorful-bar">
-            <h1>Dr. Narayan Kundu</h1>
-            <p>Welcome to my personal webpage</p>
+<div class="content">
+    <div class="section">
+        <div>
+            Neural Noise
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#research">Research Interests</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#collaborations">Collaborations</a></li>
-                <li><a href="#downloads">Downloads</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li><a href="#hobby">Hobby</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="home">
-            <h2>About me</h2>
-            <p>Hello! I'm Narayan Kundu, an accomplished physicist specializing in Atomic, Molecular and Optical Physics. 
-                I am currently employing as a Postdoctoral Research Fellow at University of Kassel, Germany;
-               aiming to learn the state-of-the=art techniques of attosecond [10^(-18) sec] sciences.</p>
-        </section>
-        
-        <section id="research">
-            <h2>Research Interests</h2>
-            <p>Here you can describe your research interests.</p>
-        </section>
-        
-        <section id="publications">
-            <h2>Publications</h2> 
-            <ul>
-                <li>Publication 1 - <a href="https://scholar.google.com/citations?user=X_a8w1cAAAAJ&hl=en">Google Scholar</a></li>
-                <li>Publication 2 - <a href="https://www.researchgate.net/profile/Narayan-Kundu">Research Gate</a></li>
-                <!-- Add more publications as needed -->
-            </ul>
-        </section>
-        
-        <section id="collaborations">
-            <h2>Collaborations</h2>
-            <p>Details about your collaborations.</p>
-        </section>
-        
-        <section id="gallery">
-            <h2>Photo Gallery</h2>
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="IMG-20240929-WA0008.jpg" alt="Photo 1" class="gallery-thumbnail" data-full="IMG-20240929-WA0008.jpg">
-                </div>
-                <div class="gallery-item">
-                    <img src="photo2.jpg" alt="Photo 2" class="gallery-thumbnail" data-full="photo2-large.jpg">
-                </div>
-                <div class="gallery-item">
-                    <img src="photo3.jpg" alt="Photo 3" class="gallery-thumbnail" data-full="photo3-large.jpg">
-                </div>
-                <!-- Add more images as needed -->
-            </div>
-        </section>
-        
-        <section id="downloads">
-            <h2>Downloads</h2>
-            <ul>
-                <li><a href="document.pdf" class="download-link" download>Download PDF Document</a></li>
-                <li><a href="textfile.txt" class="download-link" download>Download Text File</a></li>
-                <li><a href="document.docx" class="download-link" download>Download DOCX Document</a></li>
-                <li><a href="spreadsheet.xlsx" class="download-link" download>Download Excel Spreadsheet</a></li>
-                <li><a href="presentation.pptx" class="download-link" download>Download PowerPoint Presentation</a></li>
-                <li><a href="audio.mp3" class="download-link" download>Download Audio File</a></li>
-                <li><a href="video.mp4" class="download-link" download>Download Video File</a></li>
-            </ul>
-            <h3>Embedded Documents</h3>
-            <div class="embedded-documents">
-                <iframe src="document.pdf" width="600" height="400" style="border: none;"></iframe>
-                <iframe src="presentation.pptx" width="600" height="400" style="border: none;"></iframe>
-                <!-- Add more iframes for other document types if needed -->
-            </div>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>You can reach me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        </section>
-        
-        <section id="hobby">
-            <h2>Hobby</h2>
-            <p>Here you can describe your hobby or interests outside of your professional work.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
-
-    <!-- Modal for full-size images -->
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div id="caption"></div>
     </div>
+    <div class="section">
+        <div>
+            GLSL shader based on <a href="https://x.com/zozuar/" target="_blank">@zozuar</a> <a href="https://x.com/zozuar/status/1625182758745128981/" target="_blank">artwork</a>
+        </div>
+    </div>
+    <div class="section">
+        <div>
+            <a href="https://linkedin.com/in/ksenia-kondrashova/" target="_blank">linkedIn</a>
+			  <a href="https://codepen.io/ksenia-k" target="_blank">codepen</a>
+			  <a href="https://x.com/uuuuuulala" target="_top">X (twitter)</a>
+        </div>
+    </div>
+</div>
 
-    <script src="script.js"></script>
+<canvas id="neuro"></canvas>
 
-    <script>
-    particlesJS('particle-container', {
-        "particles": {
-            "number": {
-                "value": 100,
-                "density": {
-                    "enable": true,
-                    "value_area": 800
-                }
-            },
-            "color": {
-                "value": "#E0BBE4"
-            },
-            "shape": {
-                "type": "circle",
-                "stroke": {
-                    "width": 0,
-                    "color": "#000000"
-                },
-                "polygon": {
-                    "nb_sides": 6
-                }
-            },
-            "opacity": {
-                "value": 0.5,
-                "random": false,
-                "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 0.1,
-                    "sync": false
-                }
-            },
-            "size": {
-                "value": 3,
-                "random": true,
-                "anim": {
-                    "enable": false,
-                    "speed": 40,
-                    "size_min": 0.1,
-                    "sync": false
-                }
-            },
-            "line_linked": {
-                "enable": true,
-                "distance": 150,
-                "color": "#ffffff",
-                "opacity": 0.4,
-                "width": 1
-            },
-            "move": {
-                "enable": true,
-                "speed": 3,
-                "direction": "none",
-                "random": false,
-                "straight": false,
-                "out_mode": "out",
-                "bounce": false,
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                }
-            }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "grab"
-                },
-                "onclick": {
-                    "enable": true,
-                    "mode": "push"
-                },
-                "resize": true
-            },
-            "modes": {
-                "grab": {
-                    "distance": 200,
-                    "line_linked": {
-                        "opacity": 1
-                    }
-                },
-                "bubble": {
-                    "distance": 400,
-                    "size": 40,
-                    "duration": 2,
-                    "opacity": 8,
-                    "speed": 3
-                },
-                "repulse": {
-                    "distance": 200,
-                    "duration": 0.4
-                },
-                "push": {
-                    "particles_nb": 4
-                },
-                "remove": {
-                    "particles_nb": 2
-                }
-            }
-        },
-        "retina_detect": true
-    });
+
+<script type="x-shader/x-fragment" id="vertShader">
+    precision mediump float;
+
+    varying vec2 vUv;
+    attribute vec2 a_position;
+
+    void main() {
+        vUv = .5 * (a_position + 1.);
+        gl_Position = vec4(a_position, 0.0, 1.0);
+    }
 </script>
 
-</body>
-</html>
+<script type="x-shader/x-fragment" id="fragShader">
+    precision mediump float;
+
+    varying vec2 vUv;
+    uniform float u_time;
+    uniform float u_ratio;
+    uniform vec2 u_pointer_position;
+    uniform float u_scroll_progress;
+
+    vec2 rotate(vec2 uv, float th) {
+        return mat2(cos(th), sin(th), -sin(th), cos(th)) * uv;
+    }
+
+    float neuro_shape(vec2 uv, float t, float p) {
+        vec2 sine_acc = vec2(0.);
+        vec2 res = vec2(0.);
+        float scale = 8.;
+
+        for (int j = 0; j < 15; j++) {
+            uv = rotate(uv, 1.);
+            sine_acc = rotate(sine_acc, 1.);
+            vec2 layer = uv * scale + float(j) + sine_acc - t;
+            sine_acc += sin(layer);
+            res += (.5 + .5 * cos(layer)) / scale;
+            scale *= (1.2 - .07 * p);
+        }
+        return res.x + res.y;
+    }
+
+    void main() {
+        vec2 uv = .5 * vUv;
+        uv.x *= u_ratio;
+
+        vec2 pointer = vUv - u_pointer_position;
+        pointer.x *= u_ratio;
+        float p = clamp(length(pointer), 0., 1.);
+        p = .5 * pow(1. - p, 2.);
+
+        float t = .001 * u_time;
+        vec3 color = vec3(0.);
+
+        float noise = neuro_shape(uv, t, p);
+
+        noise = 1.2 * pow(noise, 3.);
+        noise += pow(noise, 10.);
+        noise = max(.0, noise - .5);
+        noise *= (1. - length(vUv - .5));
+
+        color = normalize(vec3(.2, .5 + .4 * cos(3. * u_scroll_progress), .5 + .5 * sin(3. * u_scroll_progress)));
+
+        color = color * noise;
+
+        gl_FragColor = vec4(color, noise);
+    }
+</script>
