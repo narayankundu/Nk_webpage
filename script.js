@@ -27,6 +27,7 @@ const switchTab = (selectedButton) => {
 };
 
 
+
 // Add event listener to each tab button
 
 tabButtons.forEach(button => {
