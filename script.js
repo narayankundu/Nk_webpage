@@ -26,6 +26,14 @@ const switchTab = (selectedButton) => {
 
 };
 
+// Add event listener to each tab button
+
+tabButtons.forEach(button => {
+
+    button.addEventListener('click', () => switchTab(button));
+
+});
+
 
 // Existing code for tab switching remains the same
 
@@ -59,13 +67,4 @@ contactForm.addEventListener('submit', function(event) {
         statusMessage.innerText = "Failed to send message. Please try again.";
         statusMessage.style.color = "red";
     });
-});
-
-
-// Add event listener to each tab button
-
-tabButtons.forEach(button => {
-
-    button.addEventListener('click', () => switchTab(button));
-
 });
