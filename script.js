@@ -53,12 +53,18 @@ contactForm.addEventListener('submit', function(event) {
     const name = document.getElementById('name').value;
     const message = document.getElementById('message').value;
 
+    // Debug: Check form data
+    console.log("Form Data:", name, message);
+
     // Prepare the email parameters for EmailJS
     const emailParams = {
         from_name: name,
         message: message,
-        to_email: 'kundu.narayan1995@gmail.com'  // Your email address
+        to_email: 'kundu.narayan1995@gmail.com'
     };
+
+    // Debug: Check email params
+    console.log("Email Params:", emailParams);
 
     // Send the email via EmailJS
     emailjs.send('service_9dsxtql', 'template_gqyy4mc', emailParams)
@@ -67,10 +73,13 @@ contactForm.addEventListener('submit', function(event) {
         statusMessage.innerText = "Message sent successfully!";
         statusMessage.style.color = "green";
         contactForm.reset(); // Clear the form
-    }, function(error) {
-        // Show error message
+    })
+    .catch(function(error) {
+        // Debug: Log the error object
+        console.error("EmailJS Error:", error);
         statusMessage.innerText = "Failed to send message. Please try again.";
         statusMessage.style.color = "red";
     });
 });
+
 
