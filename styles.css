@@ -226,8 +226,3 @@ footer {
         padding: 15px;
     }
 }
-
-.tab.active {
-    display: none; /* Show the active tab */
-}
-
