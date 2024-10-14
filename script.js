@@ -9,7 +9,7 @@ const switchTab = (selectedButton) => {
     tabs.forEach(tab => tab.classList.remove('active'));
 
     // Activate the clicked button and corresponding tab
-    selectedButton.classList.add('active');
+    //selectedButton.classList.add('active');
     
     // Find the tab matching the data-tab attribute of the button
     const targetTab = document.querySelector(`#${selectedButton.dataset.tab}`);
