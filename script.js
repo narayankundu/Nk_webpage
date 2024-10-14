@@ -1,6 +1,6 @@
 // Select tab buttons and tab content (assuming tab content has class 'tab-content')
 const tabButtons = document.querySelectorAll('.tab-button');
-const tabs = document.querySelectorAll('main');
+const tabs = document.querySelectorAll('.tab-content'); // Changed to '.tab-content' to target specific tab content
 
 // Function to handle tab switching
 const switchTab = (selectedButton) => {
@@ -65,23 +65,3 @@ document.querySelectorAll('.textbox').forEach(link => {
         showPreview(fileName);
     });
 });
-
-
-// Handle form submission
-function sendMail() {
-    let parms = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value,
-    };
-
-    emailjs.send("service_9dsxtql", "template_gqyy4mc", parms)
-        .then(() => {
-            alert("Email sent successfully!");
-        })
-        .catch((error) => {
-            alert("Failed to send email. Please try again.");
-            console.error("Email sending error:", error);
-        });
-}
