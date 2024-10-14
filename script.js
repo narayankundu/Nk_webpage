@@ -44,3 +44,23 @@ function sendMail() {
             console.error("Email sending error:", error);
         });
 }
+
+
+// Handle form submission
+function sendMail() {
+    let parms = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+    };
+
+    emailjs.send("service_9dsxtql", "template_gqyy4mc", parms)
+        .then(() => {
+            alert("Email sent successfully!");
+        })
+        .catch((error) => {
+            alert("Failed to send email. Please try again.");
+            console.error("Email sending error:", error);
+        });
+}
