@@ -1,6 +1,6 @@
 // Select tab buttons and tab content
 const tabButtons = document.querySelectorAll('.tab-button');
-const tabs = document.querySelectorAll('.tab');
+const tabs = document.querySelectorAll('main');
 
 // Function to handle tab switching
 const switchTab = (selectedButton) => {
