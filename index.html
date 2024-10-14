@@ -8,143 +8,108 @@
 </head>
 <body>
     <header>
-        <div class="banner">
-            <div id="particle-container"></div>
+        <div class="colorful-bar">
             <h1>Dr. Narayan Kundu</h1>
             <p>Welcome to my personal webpage</p>
         </div>
         <nav>
-            <button class="tab-button" data-tab="home">Home</button>
-            <button class="tab-button" data-tab="research">Research Interests</button>
-            <button class="tab-button" data-tab="publications">Publications</button>
-            <button class="tab-button" data-tab="achievements">Achievements</button>
-            <button class="tab-button" data-tab="collaborations">Collaborations</button>
-            <button class="tab-button" data-tab="gallery">Gallery</button>
-            <button class="tab-button" data-tab="downloads">Downloads</button>
-            <button class="tab-button" data-tab="hobby">Hobby</button>
-            <button class="tab-button" data-tab="contact">Contact Me</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#research">Research Interests</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#collaborations">Collaborations</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#hobby">Hobby</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
         </nav>
     </header>
     
-    <main id="home" class="tab-content active gradient2">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <img src="IMG-20240929-WA0008.jpg" alt="Dr. Narayan Kundu" class="profile-pic">
-            <p>Hello! I'm Narayan Kundu, an accomplished physicist specializing in Atomic, Molecular, and Optical Physics. 
-               I am currently employed as a Postdoctoral Research Fellow at the University of Kassel, Germany; 
-               aiming to learn state-of-the-art techniques of attosecond [10<sup>-18</sup> sec] sciences.</p>
-        </div>
-    </main>
-
-    <main id="research" class="tab-content gradient1">
-        <h2>Research Interests</h2>
-        <ol class="research-list">
-            <li> Ultrafast Time-resolved Dynamics of Atoms, Molecules and Clusters</li>
-            <li> Coulomb Explosion Imaging (CEI)</li>
-            <li> Strong Field Ionization (SFI) and Non-Linear Optics</li>
-            <li> High Intensity Laser Ion Trap Experiment (HILITE)</li>
-            <li> Dissociative Electron Attachment (DEA) </li>
-            <li> Ion Pair Dissociation (IPD)</li>
-        </ol>
-    </main>
-
-    <main id="publications" class="tab-content gradient2">
-        <h2>Publications</h2>
-        <ul>
-            <li>Link to my Google Scholar - <a href="https://scholar.google.com/citations?user=X_a8w1cAAAAJ">Google Scholar</a></li>
-            <li>Link to my Research Gate - <a href="https://www.researchgate.net/profile/Narayan-Kundu">ResearchGate</a></li>
-        </ul>
-    </main>
-
-    <main id="achievements" class="tab-content gradient1">
-        <h2>List of My Achievements</h2>
-        <ul>
-            <li> 2024: Doctor of Philosophy in Physical Sciences.</li>
-            <li> 2018: Qualified JEST in Physical Science (All India Rank 156).</li>
-            <li> 2018: Qualified NET-LS in Physical Science (All India Rank 75).</li>
-            <li> 2012-2017: INSPIRE Fellowship for Pursuing PhD in Physics.</li>
-            <li> 2012-2017: INSPIRE Scholarship for top 1% rank in State Board.</li>
-            <li> 2010-2012: Scholarship from Indian Oil Corporation Limited (IOCL).</li>
-            <li> 2010-2012: Scholarship from Steel Authority of India Limited (SAIL).</li>
-            <li> 2010-2012: Swami Vivekananda Merit Cum Means (MCM) Scholarship.</li>
-        </ul>
-    </main>
-
-    <main id="collaborations" class="tab-content gradient2">
-        <h2>List of my Collaborators</h2>
-        <ol>
-            <li>Prof. Dhananjay Nandi, Department of Physical Sciences, IISER Kolkata, India.</li>
-            <li>Prof. Jochen Mikosh, Hisenberg Professor, University of Kassel, Germany.</li>
-            <li>Prof. Ashwani K. Tiwari, Department of Chemical Sciences, IISER Kolkata, India.</li>
-            <li>Dr. Minaxi Vinod Kumar, V. P. & R. P. T. P. Science College, Sardar Patel University, India.</li>
-            <li>Dr. Soumen Ghosh, Department of Physics, Ahmedabad University, India.</li>
-            <li>Dr. Moupriya Ghosh, University of Engineering & Management, Kolkata, India.</li>
-        </ol>
-    </main>
-
-    <main id="gallery" class="tab-content gradient1">
-        <h2>Photo Gallery</h2>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="IMG-20240929-WA0008.jpg" alt="Photo 1" class="gallery-thumbnail" data-full="IMG-20240929-WA0008.jpg">
+    <main>
+        <section id="home">
+            <h2>About me</h2>
+            <p>Hello! I'm Narayan Kundu, an accomplished physicist specializing in Atomic, Molecular and Optical Physics. 
+                I am currently employing as a Postdoctoral Research Fellow at University of Kassel, Germany;
+               aiming to learn the state-of-the=art techniques of attosecond [10^(-18) sec] sciences.</p>
+        </section>
+        
+        <section id="research">
+            <h2>Research Interests</h2>
+            <p>Here you can describe your research interests.</p>
+        </section>
+        
+        <section id="publications">
+            <h2>Publications</h2> 
+            <ul>
+                <li>Publication 1 - <a href="https://scholar.google.com/citations?user=X_a8w1cAAAAJ&hl=en">Google Scholar</a></li>
+                <li>Publication 2 - <a href="https://www.researchgate.net/profile/Narayan-Kundu">Research Gate</a></li>
+                <!-- Add more publications as needed -->
+            </ul>
+        </section>
+        
+        <section id="collaborations">
+            <h2>Collaborations</h2>
+            <p>Details about your collaborations.</p>
+        </section>
+        
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="IMG-20240929-WA0008.jpg" alt="Photo 1" class="gallery-thumbnail" data-full="IMG-20240929-WA0008.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo2.jpg" alt="Photo 2" class="gallery-thumbnail" data-full="photo2-large.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo3.jpg" alt="Photo 3" class="gallery-thumbnail" data-full="photo3-large.jpg">
+                </div>
+                <!-- Add more images as needed -->
             </div>
-            <div class="gallery-item">
-                <img src="photo2.jpg" alt="Photo 2" class="gallery-thumbnail" data-full="photo2-large.jpg">
+        </section>
+        
+        <section id="downloads">
+            <h2>Downloads</h2>
+            <ul>
+                <li><a href="document.pdf" class="download-link" download>Download PDF Document</a></li>
+                <li><a href="textfile.txt" class="download-link" download>Download Text File</a></li>
+                <li><a href="document.docx" class="download-link" download>Download DOCX Document</a></li>
+                <li><a href="spreadsheet.xlsx" class="download-link" download>Download Excel Spreadsheet</a></li>
+                <li><a href="presentation.pptx" class="download-link" download>Download PowerPoint Presentation</a></li>
+                <li><a href="audio.mp3" class="download-link" download>Download Audio File</a></li>
+                <li><a href="video.mp4" class="download-link" download>Download Video File</a></li>
+            </ul>
+            <h3>Embedded Documents</h3>
+            <div class="embedded-documents">
+                <iframe src="document.pdf" width="600" height="400" style="border: none;"></iframe>
+                <iframe src="presentation.pptx" width="600" height="400" style="border: none;"></iframe>
+                <!-- Add more iframes for other document types if needed -->
             </div>
-            <div class="gallery-item">
-                <img src="photo3.jpg" alt="Photo 3" class="gallery-thumbnail" data-full="photo3-large.jpg">
-            </div>
-        </div>
-    </main>
-
-    <main id="downloads" class="tab-content gradient2">
-        <h2>Downloads</h2>
-        <div class="link-box">
-            <p>Available file types:</p>
-            <div class="textbox"><a href="https://github.com/nk74269085/Nk_webpage/blob/main/Resonance_multiphoton_tunelling.pdf" class="download-link" download>Resonance_multiphton_tunelling.pdf</a></div>
-            <div class="textbox"><a href="textfile.txt" class="download-link" download>Download Text File</a></div>
-            <div class="textbox"><a href="document.docx" class="download-link" download>Download DOCX Document</a></div>
-            <div class="textbox"><a href="spreadsheet.xlsx" class="download-link" download>Download Excel Spreadsheet</a></div>
-            <div class="textbox"><a href="presentation.pptx" class="download-link" download>Download PowerPoint Presentation</a></div>
-            <div class="textbox"><a href="audio.mp3" class="download-link" download>Download Audio File</a></div>
-            <div class="textbox"><a href="video.mp4" class="download-link" download>Download Video File</a></div>
-        </div>
-    </main>
-
-    <main id="hobby" class="tab-content gradient2">
-        <h2>Hobbies</h2>
-        <p>My enthusiasm for cricket, football, badminton, and mobile photography enriches my life.
-            These activities provide a perfect blend of physical engagement and creative expression, keeping me motivated and inspired.
-            Whether I’m playing on the field, cheering for Liverpool, or capturing beautiful moments through my camera,
-            I embrace every opportunity to indulge in my passions.</p>
-    </main>
-
-    <main id="contact" class="tab-content gradient1">
-        <h2>Contact Me</h2>
-        <p>You can reach me directly by filling out the form below:</p>
-        <form>
-            <div class="form-group">
-                <label for="name">Your Full Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Your Email Id:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Your Query:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" onclick="sendMail()">Send Mail</button>
-        </form>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>You can reach me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        </section>
+        
+        <section id="hobby">
+            <h2>Hobby</h2>
+            <p>Here you can describe your hobby or interests outside of your professional work.</p>
+        </section>
     </main>
 
     <footer>
-        <p>© 2024 Dr. Narayan Kundu. All rights reserved.</p>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 
-    <script src="
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
