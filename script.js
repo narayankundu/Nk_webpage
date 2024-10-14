@@ -43,42 +43,24 @@ document.querySelectorAll('.tab-button').forEach(button => {
 // Existing code for tab switching remains the same
 
 // Handle form submission
-const contactForm = document.getElementById('contact-form');
-const statusMessage = document.getElementById('status-message');
+const btn = document.getElementById('button');
 
-contactForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form from refreshing the page
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-    // Collect the form data
-    const name = document.getElementById('name').value;
-    const message = document.getElementById('message').value;
+   btn.value = 'Sending...';
 
-    // Debug: Check form data
-    console.log("Form Data:", name, message);
+   const serviceID = 'default_service';
+   const templateID = 'template_gqyy4mc';
 
-    // Prepare the email parameters for EmailJS
-    const emailParams = {
-        from_name: name,
-        message: message;
-    };
-
-    // Debug: Check email params
-    console.log("Email Params:", emailParams);
-
-    // Send the email via EmailJS
-    emailjs.send('service_9dsxtql', 'template_gqyy4mc', emailParams)
-    .then(function(response) {
-        // Show success message
-        statusMessage.innerText = "Message sent successfully!";
-        statusMessage.style.color = "green";
-        contactForm.reset(); // Clear the form
-    })
-    .catch(function(error) {
-        // Debug: Log the error object
-        console.error("EmailJS Error:", error);
-        statusMessage.innerText = "Failed to send message. Please try again.";
-        statusMessage.style.color = "red";
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
     });
 });
-
 
