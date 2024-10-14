@@ -25,3 +25,15 @@ const switchTab = (selectedButton) => {
 tabButtons.forEach(button => {
     button.addEventListener('click', () => switchTab(button));
 });
+
+function sendMail(){
+    let parms = {
+        name : Document.getElementById("name").value,
+        email : Document.getElementById("email").value,
+        subject : Document.getElementById("subject").value,
+        message : Document.getElementById("message").value,
+    }
+
+    emailjs.send("service_9dsxtql","template_gqyy4mc",parms).then(alert("Email sent Sucessfully!!"))
+
+}
