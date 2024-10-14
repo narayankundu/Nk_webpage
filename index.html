@@ -226,21 +226,28 @@
 
 <main id="contact" class="gradient3">
     <h2>Contact Me</h2>
-    <div class="contact-box">
-        <p>You can reach me directly by filling out the form below:</p>
         
-        <form id="contact-form">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="message">Your Query:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+        <form id="form">
+          <div class="field">
+            <label for="Subject">Subject</label>
+            <input type="text" name="Subject" id="Subject">
+          </div>
+          <div class="field">
+            <label for="name">What is your name?</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="field">
+            <label for="message">Write your message</label>
+            <input type="text" name="message" id="message">
+          </div>
+          <div class="field">
+            <label for="reply_to">Your email Id for the reply</label>
+            <input type="text" name="reply_to" id="reply_to">
+          </div>
 
-            <button type="submit">Send Message</button>
+          <input type="submit" id="button" value="Send Email" >
         </form>
 
-        <p id="status-message"></p> <!-- Display success/error messages here -->
-    </div>
 </main>
 
 
@@ -406,11 +413,11 @@
 
 </script>
 
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script type="text/javascript">
-    (function(){
-        emailjs.init("4iiSwyQwXh2t3ihbr"); // Replace with your EmailJS User ID/public API key
-    })();
+  emailjs.init('4iiSwyQwXh2t3ihbr')
 </script>
 
 
