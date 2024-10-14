@@ -228,6 +228,6 @@ footer {
 }
 
 .tab.active {
-    display: block; /* Show the active tab */
+    display: none; /* Show the active tab */
 }
 
