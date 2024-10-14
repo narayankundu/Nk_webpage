@@ -5,8 +5,8 @@ const tabs = document.querySelectorAll('.tab-content'); // Use '.tab-content' to
 // Function to handle tab switching
 const switchTab = (selectedButton) => {
     // Remove 'active' class from all buttons and tabs
-    tabButtons.forEach(btn => btn.classList.remove('active'));
-    tabs.forEach(tab => tab.classList.remove('active'));
+    //tabButtons.forEach(btn => btn.classList.remove('active'));
+    //tabs.forEach(tab => tab.classList.remove('active'));
 
     // Activate the clicked button and corresponding tab
     selectedButton.classList.add('active');
