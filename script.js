@@ -59,8 +59,7 @@ contactForm.addEventListener('submit', function(event) {
     // Prepare the email parameters for EmailJS
     const emailParams = {
         from_name: name,
-        message: message,
-        to_email: 'kundu.narayan1995@gmail.com'
+        message: message;
     };
 
     // Debug: Check email params
