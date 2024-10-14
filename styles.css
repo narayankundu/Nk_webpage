@@ -43,7 +43,7 @@ p {
     }
 }
 
-/* Particle Background */
+/* Particle Background Container */
 #particle-container {
     position: fixed;
     top: 0;
@@ -52,8 +52,10 @@ p {
     height: 100%;
     z-index: -1;
     pointer-events: none;
-    opacity: 0.4; /* Subtle effect */
+    opacity: 0.6;
+    background-color: transparent;
 }
+
 
 /* Header Styles */
 header {
