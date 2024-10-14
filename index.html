@@ -226,27 +226,25 @@
 
 
 
-    <main id="contact" class="gradient3">
+<main id="contact" class="gradient3">
+    <h2>Contact Me</h2>
+    <div class="contact-box">
+        <p>You can reach me directly by filling out the form below:</p>
+        
+        <form id="contact-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="message">Your Query:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-        <h2>Contact Me</h2>
+            <button type="submit">Send Message</button>
+        </form>
 
-        <div class="contact-box">
+        <p id="status-message"></p> <!-- Display success/error messages here -->
+    </div>
+</main>
 
-            <p>
-
-                You can reach me at 
-
-                <a href="mailto:your-kundu.narayan1995@gmail.com" class="email-link">
-
-                    <i class="fas fa-envelope"></i> kundu.narayan1995@gmail.com
-
-                </a>
-
-            </p>
-
-        </div>
-
-    </main>
 
 
 
@@ -410,6 +408,12 @@
 
 </script>
 
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID
+    })();
+</script>
 
 
 </body>
