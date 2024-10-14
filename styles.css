@@ -220,9 +220,14 @@ footer {
         text-align: center;
     }
     .profile-pic {
-        width: 100px;
+        width: 120px;
     }
     main {
         padding: 15px;
     }
 }
+
+.tab.active {
+    display: block; /* Show the active tab */
+}
+
