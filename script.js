@@ -1,6 +1,6 @@
-// Select tab buttons and tab content (assuming each tab is inside a div with class 'tab')
+// Select tab buttons and tab content
 const tabButtons = document.querySelectorAll('.tab-button');
-const tabs = document.querySelectorAll('.tab'); // Updated: assuming tab content has a 'tab' class
+const tabs = document.querySelectorAll('.tab');
 
 // Function to handle tab switching
 const switchTab = (selectedButton) => {
@@ -9,7 +9,7 @@ const switchTab = (selectedButton) => {
     tabs.forEach(tab => tab.classList.remove('active'));
 
     // Activate the clicked button and corresponding tab
-    //selectedButton.classList.add('active');
+    selectedButton.classList.add('active');
     
     // Find the tab matching the data-tab attribute of the button
     const targetTab = document.querySelector(`#${selectedButton.dataset.tab}`);
@@ -26,14 +26,21 @@ tabButtons.forEach(button => {
     button.addEventListener('click', () => switchTab(button));
 });
 
-function sendMail(){
+// Handle form submission
+function sendMail() {
     let parms = {
-        name : Document.getElementById("name").value,
-        email : Document.getElementById("email").value,
-        subject : Document.getElementById("subject").value,
-        message : Document.getElementById("message").value,
-    }
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+    };
 
-    emailjs.send("service_9dsxtql","template_gqyy4mc",parms).then(alert("Email sent Sucessfully!!"))
-
+    emailjs.send("service_9dsxtql", "template_gqyy4mc", parms)
+        .then(() => {
+            alert("Email sent successfully!");
+        })
+        .catch((error) => {
+            alert("Failed to send email. Please try again.");
+            console.error("Email sending error:", error);
+        });
 }
