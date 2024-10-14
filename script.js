@@ -61,7 +61,7 @@ contactForm.addEventListener('submit', function(event) {
     };
 
     // Send the email via EmailJS
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', emailParams)
+    emailjs.send('service_9dsxtql', 'template_gqyy4mc', emailParams)
     .then(function(response) {
         // Show success message
         statusMessage.innerText = "Message sent successfully!";
