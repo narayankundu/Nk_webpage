@@ -27,8 +27,7 @@ const switchTab = (selectedButton) => {
 };
 
 
-// Ensure EmailJS is initialized with your user ID
-emailjs.init("service_9dsxtql"); 
+// Existing code for tab switching remains the same
 
 // Handle form submission
 const contactForm = document.getElementById('contact-form');
@@ -38,15 +37,8 @@ contactForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form from refreshing the page
 
     // Collect the form data
-    const name = document.getElementById('name').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    // Basic form validation
-    if (!name || !message) {
-        statusMessage.innerText = "Please fill in all fields.";
-        statusMessage.style.color = "red";
-        return;
-    }
+    const name = document.getElementById('name').value;
+    const message = document.getElementById('message').value;
 
     // Prepare the email parameters for EmailJS
     const emailParams = {
@@ -56,7 +48,7 @@ contactForm.addEventListener('submit', function(event) {
     };
 
     // Send the email via EmailJS
-    emailjs.send("service_9dsxtql", "template_gqyy4mc_email", emailParams)
+    emailjs.send("service_9dsxtql","template_gqyy4mc_email", emailParams)
     .then(function(response) {
         // Show success message
         statusMessage.innerText = "Message sent successfully!";
