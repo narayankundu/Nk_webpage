@@ -18,6 +18,27 @@ tabButtons.forEach(button => {
     button.addEventListener('click', () => switchTab(button));
 });
 
+// Hide all sections except the active one
+document.querySelectorAll('main').forEach(tab => {
+    if (!tab.classList.contains('active')) {
+        tab.style.display = 'none';
+    }
+});
+
+// Show only the active tab
+document.querySelectorAll('.tab-button').forEach(button => {
+    button.addEventListener('click', function() {
+        // Hide all tabs
+        document.querySelectorAll('main').forEach(tab => {
+            tab.style.display = 'none';
+        });
+
+        // Show the selected tab
+        const tabId = button.getAttribute('data-tab');
+        document.getElementById(tabId).style.display = 'block';
+    });
+});
+
 
 // Existing code for tab switching remains the same
 
