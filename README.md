@@ -674,6 +674,32 @@ footer {
 }
 
 
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 15px;
+  color: #777;
+}
+
+.field input {
+  display: block;
+  min-width: 400px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 8px 40px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none
+}
+
 ########################################   js file #########################################################
 
 const tabButtons = document.querySelectorAll('.tab-button');
