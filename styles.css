@@ -253,3 +253,18 @@ input[type="submit"] {
   color: #fff;
   border: none
 }
+
+
+.collaborator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.collaborator-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
