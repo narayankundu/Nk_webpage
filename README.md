@@ -48,9 +48,9 @@ My personal Webpage  backup files (html,css, js)
             
             <button class="tab-button" data-tab="downloads">Downloads</button>
             
-            <button class="tab-button" data-tab="contact">Contact Me</button>
-            
             <button class="tab-button" data-tab="hobby">Hobby</button>
+
+            <button class="tab-button" data-tab="contact">Contact Me</button>
         </nav>
 
     </header>
@@ -155,15 +155,17 @@ My personal Webpage  backup files (html,css, js)
 
         <ol>
 
-            <ol>1. Prof. Dhananjay Nandi, Department of Physical Sciences, IISER Kolkata, India.</ol>
+            <ol>1. Prof. Dhananjay Nandi, Department of Physical Sciences, IISER Kolkata, West Benagl, India.</ol>
 
-            <ol>2. Prof. Jochen Mikosh, Hisenberg Professor, University of Kassel, Geramny.</ol>
+            <ol>2. Prof. Jochen Mikosh, Hisenberg Professor, University of Kassel, Kassel, Geramny.</ol>
 
-            <ol>3. Prof. Ashwani K. Tiwari, Department of Chemical Sciences, IISER Kolkata, India.</ol>
+            <ol>3. Prof. Ashwani K. Tiwari, Department of Chemical Sciences, IISER Kolkata, West Bengal, India.</ol>
 
             <ol>4. Dr. Minaxi Vinod Kumar, V. P. & R. P. T. P. Science College, Sardar Patel University, India.</ol>
 
-            <ol>5. Dr. Soumen Ghosh, Deapartment of Physics, Ahmedabad University, India.</ol>
+            <ol>5. Dr. Soumen Ghosh, Deapartment of Physics, Ahmedabad University, Gujrat, India.</ol>
+
+            <ol>6. Dr. Moupiya Ghosh, Deapartment of Physics, University of Engineering & Management, Kolkata, India.</ol>
 
         </0l>
 
@@ -228,29 +230,6 @@ My personal Webpage  backup files (html,css, js)
     </main>
 
 
-
-<main id="contact" class="gradient3">
-    <h2>Contact Me</h2>
-    <div class="contact-box">
-        <p>You can reach me directly by filling out the form below:</p>
-        
-        <form id="contact-form">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="message">Your Query:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-
-        <p id="status-message"></p> <!-- Display success/error messages here -->
-    </div>
-</main>
-
-
-
-
     <main id="hobby" class="gradient1">
 
         <h2>Hobbies</h2>
@@ -264,6 +243,34 @@ My personal Webpage  backup files (html,css, js)
             I embrace every opportunity to indulge in my passions.</p>
 
     </main>
+
+
+
+<main id="contact" class="gradient3">
+    <h2>Contact Me</h2>
+        
+        <form id="form">
+          <div class="field">
+            <label for="Subject">Subject</label>
+            <input type="text" name="Subject" id="Subject">
+          </div>
+          <div class="field">
+            <label for="name">What is your name?</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="field">
+            <label for="message">Write your message</label>
+            <input type="text" name="message" id="message">
+          </div>
+          <div class="field">
+            <label for="reply_to">Your email Id for the reply</label>
+            <input type="text" name="reply_to" id="reply_to">
+          </div>
+
+          <input type="submit" id="button" value="Send Email" >
+        </form>
+
+</main>
 
 
 
@@ -411,17 +418,29 @@ My personal Webpage  backup files (html,css, js)
 
 </script>
 
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script type="text/javascript">
-    (function(){
-        emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID
-    })();
+  emailjs.init('4iiSwyQwXh2t3ihbr')
+</script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5TNZ5C9T1E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5TNZ5C9T1E');
 </script>
 
 
 </body>
 
 </html>
+
 
 ################################################  css file  ###########################################
 
