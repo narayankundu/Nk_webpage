@@ -348,10 +348,10 @@ h2 {
 
 /* Add larger gap between columns */
 .tree li {
-    padding: 20px 10px;
+    padding: 10px 5px;
     position: relative;
     text-align: center;
-    margin-right: 100px;  /* Adjust this value for larger span gap */
+    margin-right: 10px;  /* Adjust this value for larger span gap */
 }
 
 .tree li::before {
@@ -369,7 +369,7 @@ h2 {
     position: absolute;
     width: 100%;
     height: 0;
-    top: 10px; /* Adjust this if needed for spacing */
+    top: 5px; /* Adjust this if needed for spacing */
     border-top: 0; /* Set to 0 to hide the horizontal line */
 }
 
@@ -378,7 +378,7 @@ h2 {
     background-color: #3498db;
     color: white;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     display: inline-block;
     white-space: nowrap;
 }
