@@ -260,11 +260,11 @@ input[type="submit"] {
 }
 
 .collaboration-column {
-    width: 48%; /* Adjust width to fit the columns side by side */
+    width: 49%; /* Adjust width to fit the columns side by side */
 }
 
 .collaborator {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .collaborator-photo {
@@ -272,7 +272,6 @@ input[type="submit"] {
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    margin-right: 15px;
 }
 
 h2 {
