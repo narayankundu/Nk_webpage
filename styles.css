@@ -340,15 +340,10 @@ h2 {
     margin-top: 20px;
 }
 
+/* Remove the horizontal lines */
 .tree ul::before {
     content: "";
-    display: block;
-    width: 100%;
-    height: 0;
-    border-top: 2px solid #ccc;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: none; /* Change from block to none to hide the horizontal line */
 }
 
 /* Add larger gap between columns */
@@ -370,12 +365,12 @@ h2 {
 }
 
 .tree li::after {
-    content: "";
+    content: ""; /* Keep this empty to maintain vertical lines if needed */
     position: absolute;
     width: 100%;
     height: 0;
-    top: 10px;
-    border-top: 2px solid #ccc;
+    top: 10px; /* Adjust this if needed for spacing */
+    border-top: 0; /* Set to 0 to hide the horizontal line */
 }
 
 .tree li span {
@@ -414,7 +409,7 @@ h2 {
     position: absolute;
     width: 0;
     height: 100%;
-    border-left: 2px solid #ccc;
+    border-left: 2px solid #ccc; /* Keep the vertical line */
     left: 50%;
     top: 0;
 }
