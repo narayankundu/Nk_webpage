@@ -348,7 +348,7 @@ h2 {
 
 /* Add larger gap between columns */
 .tree li {
-    padding: 10px 5px;
+    padding: 5px 5px;
     position: relative;
     text-align: center;
     margin-right: 10px;  /* Adjust this value for larger span gap */
