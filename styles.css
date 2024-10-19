@@ -289,3 +289,54 @@ h2 {
     }
 }
 
+
+
+.tree, .tree ul {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1em;
+}
+
+.tree ul {
+    margin-left: 20px;
+    position: relative;
+}
+
+.tree ul ul {
+    margin-left: 20px;
+}
+
+.tree span {
+    padding: 5px 10px;
+    display: inline-block;
+    background: #8db5e1;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tree ul::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    border-left: 1px solid #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tree li {
+    margin: 0;
+    padding: 0 20px;
+    position: relative;
+}
+
+.tree li::before {
+    content: "";
+    border-top: 1px solid #ccc;
+    position: absolute;
+    top: 1em;
+    width: 20px;
+    left: -20px;
+}
