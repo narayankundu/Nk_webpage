@@ -293,7 +293,6 @@ h2 {
 
 
 
-
 #EK-Tree {
     width: 100vw;
     height: 100vh;
@@ -336,7 +335,7 @@ h2 {
 
 .tree ul ul {
     display: block;
-    margin-top: 20px;
+    margin-top: 30px; /* Increased vertical spacing between elements */
 }
 
 /* Remove the horizontal lines */
@@ -350,16 +349,16 @@ h2 {
     padding: 5px 5px;
     position: relative;
     text-align: center;
-    margin-right: 10px;  /* Reduced margin for tighter spacing */
+    margin-right: 10px;  /* Maintain horizontal spacing */
 }
 
-/* Adjust the vertical lines */
+/* Adjust the vertical lines with deep red color */
 .tree li::before {
     content: "";
-    border-left: 2px solid #bdc3c7; /* Softer vertical line color */
+    border-left: 2px solid #c0392b; /* Deep red vertical line */
     position: absolute;
-    height: 20px;
-    top: -20px;
+    height: 30px; /* Increase the height of vertical lines */
+    top: -30px; /* Adjust the positioning for proper alignment */
     width: 0;
     left: 50%;
 }
@@ -405,14 +404,14 @@ h2 {
     text-decoration: underline;
 }
 
+/* Adjust the vertical connector line between child and parent nodes */
 .tree ul ul::before {
     content: "";
     position: absolute;
     width: 0;
     height: 100%;
-    border-left: 2px solid #bdc3c7; /* Keep the vertical line soft */
+    border-left: 2px solid #c0392b; /* Deep red for vertical line */
     left: 50%;
     top: 0;
 }
-
 
