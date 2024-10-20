@@ -294,8 +294,8 @@ h2 {
 
 
 #EK-Tree {
-    width: 100vw;
-    height: 100vh;
+    width: 98vw;
+    height: 98vh;
     padding: 0;
     margin: 0;
     display: flex;
@@ -309,9 +309,11 @@ h2 {
 /* Mobile view adjustments */
 @media (max-width: 768px) {
     #EK-Tree {
-        height: auto; /* Allow the tree to expand vertically */
-        display: block; /* Switch to block layout for better mobile handling */
-        padding: 20px; /* Add padding for better mobile spacing */
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
     }
 
     .tree-container {
