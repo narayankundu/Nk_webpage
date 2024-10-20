@@ -415,3 +415,14 @@ h2 {
     top: 0;
 }
 
+/* Change color for the second row (seven professors) */
+.tree ul ul li span {
+    background-color: #2ecc71; /* Light green for the second row */
+    color: white;
+}
+
+/* Hover effect for second row */
+.tree ul ul li span:hover {
+    background-color: #27ae60; /* Darker green on hover for second row */
+}
+
