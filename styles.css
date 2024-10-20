@@ -295,10 +295,10 @@ h2 {
 
 
 #EK-Tree {
-    width: 98vw;
-    height: 98vh;
-    padding: 0;
-    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 5 px;
+    margin: 5 px;
     display: flex;
     justify-content: center;  /* Center horizontally */
     align-items: center;      /* Center vertically */
@@ -307,63 +307,10 @@ h2 {
     overflow-y: auto;         /* Enable vertical scrolling if necessary */
 }
 
-/* Mobile view adjustments */
-@media (max-width: 768px) {
-    #EK-Tree {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .tree-container {
-        width: 100%;
-        display: block; /* Stack elements vertically */
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .tree ul {
-        display: block; /* Stack rows on top of each other */
-        padding-left: 0;
-    }
-
-    .tree ul ul {
-        margin-top: 20px; /* Reduce vertical spacing for mobile */
-    }
-
-    .tree li {
-        margin-right: 5px; /* Reduce horizontal spacing between nodes */
-        text-align: center;
-    }
-
-    .tree li span {
-        padding: 5px 10px; /* Reduce padding inside nodes */
-        font-size: 12px; /* Reduce font size for mobile */
-    }
-
-    /* Adjust root node styling for mobile */
-    .tree li span.root {
-        font-size: 14px; /* Smaller font for root node */
-    }
-
-    /* Adjust the height of vertical lines */
-    .tree li::before {
-        height: 15px; /* Reduce vertical line height */
-        top: -15px; /* Adjust top position */
-    }
-
-    .tree ul ul::before {
-        border-left: 2px solid #c0392b; /* Ensure deep red line remains */
-        height: 100%; /* Keep the vertical line full height */
-    }
-}
-
 /* Tree structure */
 .tree, .tree ul {
-    margin: 0;
-    padding: 0;
+    margin: 5 px;
+    padding: 5 px;
     list-style-type: none;
     position: relative;
 }
@@ -376,7 +323,7 @@ h2 {
 
 .tree ul ul {
     display: block;
-    margin-top: 30px; /* Increased vertical spacing between elements */
+    margin-top: 10px; /* Increased vertical spacing between elements */
 }
 
 /* Remove the horizontal lines */
@@ -387,10 +334,10 @@ h2 {
 
 /* Reduce gap between columns */
 .tree li {
-    padding: 5px 5px;
+    padding: 8px 5px;
     position: relative;
     text-align: center;
-    margin-right: 10px;  /* Maintain horizontal spacing */
+    margin-right: 5px;  /* Maintain horizontal spacing */
 }
 
 /* Adjust the vertical lines with deep red color */
@@ -398,9 +345,9 @@ h2 {
     content: "";
     border-left: 2px solid #c0392b; /* Deep red vertical line */
     position: absolute;
-    height: 30px; /* Increase the height of vertical lines */
-    top: -30px; /* Adjust the positioning for proper alignment */
-    width: 0;
+    height: 20px; /* Increase the height of vertical lines */
+    top: -10px; /* Adjust the positioning for proper alignment */
+    width: 3px;
     left: 50%;
 }
 
@@ -416,12 +363,12 @@ h2 {
 .tree li span {
     padding: 8px 16px; /* Reduced padding for a more compact look */
     background-color: #3498db; /* Bright blue for nodes */
-    color: white;
+    color: red;
     border-radius: 5px;
     font-size: 14px; /* Reduced font size */
     display: inline-block;
     white-space: nowrap;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 /* Special styling for root node */
@@ -458,11 +405,11 @@ h2 {
 
 /* Change color for the second row (seven professors) */
 .tree ul ul li span {
-    background-color: #2ecc71; /* Light green for the second row */
+    background-color: #ee05f9; /* Light green for the second row */
     color: white;
 }
 
 /* Hover effect for second row */
 .tree ul ul li span:hover {
-    background-color: #27ae60; /* Darker green on hover for second row */
+    background-color: #f39c12; /* Darker green on hover for second row */
 } 
