@@ -303,23 +303,61 @@ h2 {
     align-items: center;      /* Center vertically */
     background-color: #f7f9fc; /* Light background for a clean look */
     overflow-x: auto;         /* Handle overflow if the tree is wider than the screen */
+    overflow-y: auto;         /* Enable vertical scrolling if necessary */
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #34495e; /* Darker text for contrast */
-    font-size: 24px;
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    #EK-Tree {
+        height: auto; /* Allow the tree to expand vertically */
+        display: block; /* Switch to block layout for better mobile handling */
+        padding: 20px; /* Add padding for better mobile spacing */
+    }
+
+    .tree-container {
+        width: 100%;
+        display: block; /* Stack elements vertically */
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .tree ul {
+        display: block; /* Stack rows on top of each other */
+        padding-left: 0;
+    }
+
+    .tree ul ul {
+        margin-top: 20px; /* Reduce vertical spacing for mobile */
+    }
+
+    .tree li {
+        margin-right: 5px; /* Reduce horizontal spacing between nodes */
+        text-align: center;
+    }
+
+    .tree li span {
+        padding: 5px 10px; /* Reduce padding inside nodes */
+        font-size: 12px; /* Reduce font size for mobile */
+    }
+
+    /* Adjust root node styling for mobile */
+    .tree li span.root {
+        font-size: 14px; /* Smaller font for root node */
+    }
+
+    /* Adjust the height of vertical lines */
+    .tree li::before {
+        height: 15px; /* Reduce vertical line height */
+        top: -15px; /* Adjust top position */
+    }
+
+    .tree ul ul::before {
+        border-left: 2px solid #c0392b; /* Ensure deep red line remains */
+        height: 100%; /* Keep the vertical line full height */
+    }
 }
 
 /* Tree structure */
-.tree-container {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;  /* Center content within the container */
-}
-
 .tree, .tree ul {
     margin: 0;
     padding: 0;
@@ -425,4 +463,5 @@ h2 {
 .tree ul ul li span:hover {
     background-color: #27ae60; /* Darker green on hover for second row */
 }
+
 
