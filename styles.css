@@ -17,27 +17,34 @@ body {
     overflow-x: hidden;
     position: relative;
     line-height: 1.8;
-    font-size: 1.2rem; /* Increased font size */
+    font-size: 1.2rem;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Times New Roman', serif;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 p {
     margin-bottom: 15px;
-    font-size: 1.1rem; /* Increased paragraph font size */
+    font-size: 1.1rem;
 }
 
-/* Animation for the Background */
+/* Animation */
 @keyframes gradientShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* Particle Background */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideIn { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* Container Styles */
 #particle-container {
     position: fixed;
     top: 0;
@@ -59,33 +66,25 @@ header {
     text-transform: uppercase;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
     animation: fadeIn 1.5s ease;
-    font-weight: 300;
     margin-bottom: 20px;
 }
 
-/* Tab Button Styling */
-.tab-button {
+/* Tab Button & Main Content Styling */
+.tab-button, .link-box {
     background: var(--transparent-white-bg);
     color: white;
     padding: 10px 20px;
     font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: 0 8px;
+    margin: 8px;
     border-radius: 8px;
     backdrop-filter: blur(5px);
 }
 
-.tab-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
-}
+.tab-button:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4); }
+.tab-button.active { background: rgba(255, 255, 255, 0.35); }
 
-.tab-button.active {
-    background: rgba(255, 255, 255, 0.35);
-}
-
-/* Main Content Styling */
 main {
     display: none;
     padding: 20px;
@@ -97,26 +96,19 @@ main {
     backdrop-filter: blur(5px);
 }
 
-main.active {
-    display: block;
-}
+main.active { display: block; }
 
-/* Profile Picture Styling */
+/* Profile Picture & Link Styling */
 .profile-pic {
     width: 120px;
-    height: auto;
     border-radius: 50%;
     box-shadow: 0 4px 15px var(--shadow-color);
     margin: 15px 0;
     animation: bounce 1s ease;
 }
 
-/* Link Box Styling */
 .link-box {
-    background: var(--transparent-white-bg);
-    border-radius: 8px;
     padding: 15px;
-    margin-top: 15px;
     font-size: 0.9rem;
 }
 
@@ -140,30 +132,6 @@ footer {
     opacity: 0.9;
 }
 
-/* Gradient Styles */
-.gradient1 { background: linear-gradient(135deg, #33ccff, #ff00ff); }
-.gradient2 { background: linear-gradient(135deg, #ff00ff, #33ccff); }
-.gradient3 { background: linear-gradient(135deg, #ff00ff, #33ccff); }
-.gradient4 { background: linear-gradient(135deg, #ffe0b2, #bbdefb); }
-.gradient5 { background: linear-gradient(135deg, #b2fbc5, #e0b3ff); }
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideIn {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    60% { transform: translateY(-5px); }
-}
-
 /* Gallery */
 .gallery {
     display: flex;
@@ -178,19 +146,14 @@ footer {
     transition: transform 0.3s;
 }
 
-.gallery-item:hover {
-    transform: scale(1.05) rotate(2deg);
-}
-
+.gallery-item:hover { transform: scale(1.05) rotate(2deg); }
 .gallery-thumbnail {
     width: 100%;
     border-radius: 10px;
     transition: transform 0.3s;
 }
 
-.gallery-thumbnail:hover {
-    transform: scale(1.1);
-}
+.gallery-thumbnail:hover { transform: scale(1.1); }
 
 /* About Me Section */
 .about-container {
@@ -202,268 +165,117 @@ footer {
 .about-container p {
     flex: 1;
     text-align: justify;
-    font-size: 1.1rem; /* Increased about me section font size */
-    line-height: 1.8;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    header {
-        font-size: 1.5rem;
-    }
-    .tab-button {
-        font-size: 0.8rem;
-        padding: 8px 15px;
-    }
-    .about-container {
+    header { font-size: 1.5rem; }
+    .tab-button { font-size: 0.8rem; padding: 8px 15px; }
+    .about-container { flex-direction: column; text-align: center; }
+    .profile-pic { width: 100px; }
+    main { padding: 15px; }
+    .collaboration-container {
         flex-direction: column;
-        text-align: center;
-    }
-    .profile-pic {
-        width: 100px;
-    }
-    main {
-        padding: 15px;
+        width: 100%;
     }
 }
 
-
+/* Form Styles */
 .field {
-  margin-bottom: 10px;
-}
-
-.field label {
-  display: block;
-  font-size: 15px;
-  color: #777;
-}
-
-.field input {
-  display: block;
-  min-width: 400px;
-  line-height: 1.5;
-  font-size: 16px;
-}
-
-input[type="submit"] {
-  display: block;
-  padding: 8px 40px;
-  font-size: 14px;
-  background-color: #4460AA;
-  color: #fff;
-  border: none
-}
-
-.collaboration-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.collaboration-column {
-    width: 49%; /* Adjust width to fit the columns side by side */
-}
-
-.collaborator {
     margin-bottom: 10px;
 }
 
-.collaborator-photo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
+.field label {
+    display: block;
+    font-size: 15px;
+    color: #777;
 }
 
-h2 {
-    text-align: center;
+.field input {
+    display: block;
+    min-width: 400px;
+    line-height: 1.5;
+    font-size: 16px;
 }
 
-@media (max-width: 768px) {
-    /* For smaller screens, stack the columns vertically */
-    .collaboration-container {
-        flex-direction: column;
-    }
-
-    .collaboration-column {
-        width: 100%;
-    }
+input[type="submit"] {
+    padding: 8px 40px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none;
 }
 
-
-
-
-
+/* Tree Structure */
 #EK-Tree {
     width: 98vw;
     height: 98vh;
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: center;  /* Center horizontally */
-    align-items: center;      /* Center vertically */
-    background-color: #f7f9fc; /* Light background for a clean look */
-    overflow-x: auto;         /* Handle overflow if the tree is wider than the screen */
-    overflow-y: auto;         /* Enable vertical scrolling if necessary */
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fc;
+    overflow: auto;
 }
 
-/* Mobile view adjustments */
-@media (max-width: 768px) {
-    #EK-Tree {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .tree-container {
-        width: 100%;
-        display: block; /* Stack elements vertically */
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .tree ul {
-        display: block; /* Stack rows on top of each other */
-        padding-left: 0;
-    }
-
-    .tree ul ul {
-        margin-top: 20px; /* Reduce vertical spacing for mobile */
-    }
-
-    .tree li {
-        margin-right: 5px; /* Reduce horizontal spacing between nodes */
-        text-align: center;
-    }
-
-    .tree li span {
-        padding: 5px 10px; /* Reduce padding inside nodes */
-        font-size: 12px; /* Reduce font size for mobile */
-    }
-
-    /* Adjust root node styling for mobile */
-    .tree li span.root {
-        font-size: 14px; /* Smaller font for root node */
-    }
-
-    /* Adjust the height of vertical lines */
-    .tree li::before {
-        height: 15px; /* Reduce vertical line height */
-        top: -15px; /* Adjust top position */
-    }
-
-    .tree ul ul::before {
-        border-left: 2px solid #c0392b; /* Ensure deep red line remains */
-        height: 100%; /* Keep the vertical line full height */
-    }
-}
-
-/* Tree structure */
 .tree, .tree ul {
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    list-style: none;
     position: relative;
 }
 
 .tree ul {
-    padding-left: 0;
     display: flex;
     justify-content: center;
 }
 
-.tree ul ul {
-    display: block;
-    margin-top: 30px; /* Increased vertical spacing between elements */
-}
-
-/* Remove the horizontal lines */
-.tree ul::before {
-    content: "";
-    display: none; /* Change from block to none to hide the horizontal line */
-}
-
-/* Reduce gap between columns */
 .tree li {
-    padding: 5px 5px;
+    padding: 5px;
     position: relative;
     text-align: center;
-    margin-right: 10px;  /* Maintain horizontal spacing */
-}
-
-/* Adjust the vertical lines with deep red color */
-.tree li::before {
-    content: "";
-    border-left: 2px solid #c0392b; /* Deep red vertical line */
-    position: absolute;
-    height: 30px; /* Increase the height of vertical lines */
-    top: -30px; /* Adjust the positioning for proper alignment */
-    width: 0;
-    left: 50%;
-}
-
-.tree li::after {
-    content: ""; /* Keep this empty to maintain vertical lines if needed */
-    position: absolute;
-    width: 100%;
-    height: 0;
-    top: 5px; /* Adjust this if needed for spacing */
-    border-top: 0; /* Set to 0 to hide the horizontal line */
 }
 
 .tree li span {
-    padding: 8px 16px; /* Reduced padding for a more compact look */
-    background-color: #3498db; /* Bright blue for nodes */
+    padding: 8px 16px;
+    background-color: #3498db;
     color: white;
     border-radius: 5px;
-    font-size: 14px; /* Reduced font size */
+    font-size: 14px;
     display: inline-block;
     white-space: nowrap;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
 }
 
-/* Special styling for root node */
-.tree li span.root {
-    background-color: #e74c3c; /* Bold red for the root node */
-    font-size: 16px; /* Reduced font size */
-    font-weight: bold;
+.tree li span.root { background-color: #e74c3c; font-size: 16px; font-weight: bold; }
+.tree li span:hover { background-color: #f39c12; }
+
+.tree ul ul { display: block; margin-top: 30px; }
+.tree li::before {
+    content: "";
+    border-left: 2px solid #c0392b;
+    position: absolute;
+    height: 30px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.tree li span:hover {
-    background-color: #f39c12; /* Bright yellow-orange on hover */
-}
-
-/* Add styles for anchor tags (links) */
-.tree li span a {
-    color: white;
-    text-decoration: none;
-}
-
-.tree li span a:hover {
-    text-decoration: underline;
-}
-
-/* Adjust the vertical connector line between child and parent nodes */
 .tree ul ul::before {
     content: "";
     position: absolute;
     width: 0;
     height: 100%;
-    border-left: 2px solid #c0392b; /* Deep red for vertical line */
+    border-left: 2px solid #c0392b;
     left: 50%;
     top: 0;
 }
 
-/* Change color for the second row (seven professors) */
+/* Change color for second row */
 .tree ul ul li span {
-    background-color: #2ecc71; /* Light green for the second row */
-    color: white;
+    background-color: #2ecc71;
 }
 
-/* Hover effect for second row */
 .tree ul ul li span:hover {
-    background-color: #27ae60; /* Darker green on hover for second row */
+    background-color: #27ae60;
 }
-
-
