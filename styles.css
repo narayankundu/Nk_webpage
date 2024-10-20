@@ -373,7 +373,7 @@ h2 {
 
 /* Special styling for root node */
 .tree li span.root {
-    background-color: #e74c3c; /* Bold red for the root node */
+    background-color: #ee05f9; /* Bold red for the root node */
     font-size: 16px; /* Reduced font size */
     font-weight: bold;
 }
