@@ -392,17 +392,6 @@ h2 {
     text-decoration: underline;
 }
 
-/* Adjust the vertical connector line between child and parent nodes */
-.tree ul ul::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    border-left: 2px solid #c0392b; /* Deep red for vertical line */
-    left: 50%;
-    top: 0;
-}
-
 /* Change color for the second row (seven professors) */
 .tree ul ul li span {
     background-color: #028d0f; /* Light green for the second row */
