@@ -345,14 +345,15 @@ h2 {
     display: none; /* Change from block to none to hide the horizontal line */
 }
 
-/* Add larger gap between columns */
+/* Reduce gap between columns */
 .tree li {
     padding: 5px 5px;
     position: relative;
     text-align: center;
-    margin-right: 20px;  /* Adjusted for more spacing */
+    margin-right: 10px;  /* Reduced margin for tighter spacing */
 }
 
+/* Adjust the vertical lines */
 .tree li::before {
     content: "";
     border-left: 2px solid #bdc3c7; /* Softer vertical line color */
@@ -373,11 +374,11 @@ h2 {
 }
 
 .tree li span {
-    padding: 10px 20px;
+    padding: 8px 16px; /* Reduced padding for a more compact look */
     background-color: #3498db; /* Bright blue for nodes */
     color: white;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px; /* Reduced font size */
     display: inline-block;
     white-space: nowrap;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
@@ -386,7 +387,7 @@ h2 {
 /* Special styling for root node */
 .tree li span.root {
     background-color: #e74c3c; /* Bold red for the root node */
-    font-size: 18px;
+    font-size: 16px; /* Reduced font size */
     font-weight: bold;
 }
 
@@ -413,4 +414,5 @@ h2 {
     left: 50%;
     top: 0;
 }
+
 
