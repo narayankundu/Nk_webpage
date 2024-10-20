@@ -297,20 +297,21 @@ h2 {
 #EK-Tree {
     width: 100vw;
     height: 100vh;
-    padding: 5 px;
-    margin: 5 px;
+    padding: 5px;  /* Corrected spacing */
+    margin: 5px;   /* Corrected spacing */
     display: flex;
-    justify-content: center;  /* Center horizontally */
-    align-items: center;      /* Center vertically */
-    background-color: #f7f9fc; /* Light background for a clean look */
-    overflow-x: auto;         /* Handle overflow if the tree is wider than the screen */
-    overflow-y: auto;         /* Enable vertical scrolling if necessary */
+    justify-content: flex-start;  /* Start alignment to allow scrolling left and right */
+    align-items: flex-start;      /* Align content to the top */
+    background-color: #f7f9fc;    /* Light background */
+    overflow-x: auto;             /* Enable horizontal scrolling */
+    overflow-y: auto;             /* Enable vertical scrolling */
+    position: relative;           /* Ensure proper positioning */
 }
 
 /* Tree structure */
 .tree, .tree ul {
-    margin: 5 px;
-    padding: 5 px;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
     position: relative;
 }
@@ -318,18 +319,18 @@ h2 {
 .tree ul {
     padding-left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;  /* Ensure left alignment */
 }
 
 .tree ul ul {
     display: block;
-    margin-top: 10px; /* Increased vertical spacing between elements */
+    margin-top: 10px;
 }
 
 /* Remove the horizontal lines */
 .tree ul::before {
     content: "";
-    display: none; /* Change from block to none to hide the horizontal line */
+    display: none;  /* Hide horizontal line */
 }
 
 /* Reduce gap between columns */
@@ -337,52 +338,54 @@ h2 {
     padding: 8px 5px;
     position: relative;
     text-align: center;
-    margin-right: 5px;  /* Maintain horizontal spacing */
+    margin-right: 5px;
+    white-space: nowrap;  /* Prevent wrapping */
 }
 
 /* Adjust the vertical lines with deep red color */
 .tree li::before {
     content: "";
-    border-left: 2px solid #c0392b; /* Deep red vertical line */
+    border-left: 2px solid #c0392b;
     position: absolute;
-    height: 20px; /* Increase the height of vertical lines */
-    top: -10px; /* Adjust the positioning for proper alignment */
+    height: 20px;
+    top: -10px;
     width: 3px;
     left: 50%;
 }
 
 .tree li::after {
-    content: ""; /* Keep this empty to maintain vertical lines if needed */
+    content: "";
     position: absolute;
     width: 100%;
     height: 0;
-    top: 5px; /* Adjust this if needed for spacing */
-    border-top: 0; /* Set to 0 to hide the horizontal line */
+    top: 5px;
+    border-top: 0;  /* Hide horizontal line */
 }
 
+/* Styling for tree nodes */
 .tree li span {
-    padding: 8px 16px; /* Reduced padding for a more compact look */
-    background-color: #3498db; /* Bright blue for nodes */
+    padding: 8px 16px;
+    background-color: #3498db;
     color: red;
     border-radius: 5px;
-    font-size: 14px; /* Reduced font size */
+    font-size: 14px;
     display: inline-block;
     white-space: nowrap;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Special styling for root node */
 .tree li span.root {
-    background-color: #ee05f9; /* Bold red for the root node */
-    font-size: 16px; /* Reduced font size */
+    background-color: #ee05f9;
+    font-size: 16px;
     font-weight: bold;
 }
 
 .tree li span:hover {
-    background-color: #f39c12; /* Bright yellow-orange on hover */
+    background-color: #f39c12;
 }
 
-/* Add styles for anchor tags (links) */
+/* Anchor tag styling */
 .tree li span a {
     color: white;
     text-decoration: none;
@@ -392,13 +395,13 @@ h2 {
     text-decoration: underline;
 }
 
-/* Change color for the second row (seven professors) */
+/* Second row color change */
 .tree ul ul li span {
-    background-color: #028d0f; /* Light green for the second row */
+    background-color: #028d0f;
     color: white;
 }
 
 /* Hover effect for second row */
 .tree ul ul li span:hover {
-    background-color: #f39c12; /* Darker green on hover for second row */
-} 
+    background-color: #f39c12;
+}
