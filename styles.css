@@ -23,7 +23,8 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Times New Roman', serif;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    color: #000000; /* Deep black color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
 p {
