@@ -21,21 +21,9 @@ body {
     font-size: 1.2rem; /* Increased font size */
 }
 
-h1 {
+h1, h2, h3, h4 {
     font-family: 'Times New Roman', serif;
-    color: #ffffff; /* Deep white color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-h1:hover {
-    color: #ff0000; /* Red color on hover */
-}
-
-h2, h3, h4 {
-    font-family: 'Times New Roman', serif;
-    color: #000000; /* Deep black color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 p {
@@ -86,17 +74,13 @@ header {
     transition: all 0.3s ease;
     margin: 0 8px;
     border-radius: 8px;
-    border: 2px solid white; /* Red border */
     backdrop-filter: blur(5px);
 }
 
 .tab-button:hover {
-    color: red; /* Change text color to red on hover */
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.4); /* Red shadow effect on hover */
-    border-color: white; /* Maintain red border on hover */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
 }
-
 
 .tab-button.active {
     background: rgba(255, 255, 255, 0.35);
@@ -160,16 +144,9 @@ footer {
 /* Gradient Styles */
 .gradient1 { background: linear-gradient(135deg, #33ccff, #ff00ff); }
 .gradient2 { background: linear-gradient(135deg, #ff00ff, #33ccff); }
-.gradient3 {
-    background: linear-gradient(135deg, #8e44ad, #2980b9); /* Darker colors for better contrast */
-}
-
-.gradient4 {
-    background: linear-gradient(135deg, #f39c12, #d1f2eb); /* Warmer tones for improved readability */
-}
-
-.gradient5 {
-    background: linear-gradient(135deg, #27ae60, #a3e4d7); /* Rich greens that enhance white text */
+.gradient3 { background: linear-gradient(135deg, #ff00ff, #33ccff); }
+.gradient4 { background: linear-gradient(135deg, #ffe0b2, #bbdefb); }
+.gradient5 { background: linear-gradient(135deg, #b2fbc5, #e0b3ff); }
 
 /* Animations */
 @keyframes fadeIn {
