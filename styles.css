@@ -159,7 +159,7 @@ footer {
 /* Gradient Styles */
 .gradient1 { background: linear-gradient(135deg, #33ccff, #ff00ff); }
 .gradient2 { background: linear-gradient(135deg, #ff00ff, #33ccff); }
-.gradient3 { background: linear-gradient(135deg, #ff00ff, #33ccff); }
+.gradient3 { background: linear-gradient(135deg, #8e44ad, #2980b9); }
 .gradient4 { background: linear-gradient(135deg, #ffe0b2, #bbdefb); }
 .gradient5 { background: linear-gradient(135deg, #b2fbc5, #e0b3ff); }
 
