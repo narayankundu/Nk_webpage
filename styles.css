@@ -239,13 +239,13 @@ footer {
         width: 100px;
     }
     main {
-        padding: 15px;
+        padding: 20px;
     }
 }
 
 
 .field {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .field label {
@@ -256,15 +256,15 @@ footer {
 
 .field input {
   display: block;
-  min-width: 400px;
-  line-height: 1.5;
-  font-size: 16px;
+  min-width: 680px;
+  line-height: 2;
+  font-size: 14px;
 }
 
 input[type="submit"] {
   display: block;
-  padding: 8px 40px;
-  font-size: 14px;
+  padding: 8px 50px;
+  font-size: 15px;
   background-color: #4460AA;  /* Adjust blue color background */
   color: #fff;  /* Adjust THE WHITE COLOR SEND */
   border: none
@@ -306,8 +306,34 @@ h2 {
 }
 
 
+/* social media css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.social-icons {
+    margin-top: 50px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
 
 
+/* EK tree media css */
 
 #EK-Tree {
     width: 100vw;
