@@ -34,7 +34,7 @@ h1:hover {
 
 h2, h3, h4 {
     font-family: 'Times New Roman', serif;
-    color: #ffd700; /* Deep black color */
+    color: #000000; /* Deep black color */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
