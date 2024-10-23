@@ -64,3 +64,13 @@ document.getElementById('form')
     });
 });
 
+
+// script for connect fb   whatsapp logo social media
+document.querySelectorAll('.social-icons a').forEach(icon => {
+    icon.addEventListener('mouseover', () => {
+        icon.style.opacity = "0.7";
+    });
+    icon.addEventListener('mouseout', () => {
+        icon.style.opacity = "1";
+    });
+});
